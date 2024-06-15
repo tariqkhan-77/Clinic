@@ -1,0 +1,106 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: lightcyan;
+  margin: auto;
+  padding: 50px;
+  border: 1px solid #888;
+  width: 25%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+}
+#heading{
+  background-color: red;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  align-items: center;
+}
+h2{ 
+  padding: 12px;
+ }
+
+i{
+  margin-right: 5px;
+}
+#uname{
+  font-size: 15px;
+  padding: 5px;
+
+}
+#pwd{
+  font-size: 15px;
+  padding: 5px;
+}
+.chk{
+  margin-right: 5px;
+}
+
+#btn1{
+  width: 100px;
+  cursor: pointer;
+  display: inline;
+  margin-right: 5px;
+}
+#btn2{
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  display: inline;
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+#btn2:hover{
+  background-color: #2196F3;
+  /* color: white; */
+  color: blue;
+  /* text-shadow: 2px 1px 0px black, 0 0 25px blue, 0 0 5px darkblue; */
+
+}
+/* The Close Button */
+/* .close { */
+  /* color: #aaaaaa;
+ */  /* float: right; */
+  /* font-size: 28px;
+  font-weight: bold;
+  order: 1;
+  margin-left: 20px;
+  color: white;
+} */
+
+/* .close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+/* table{
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  
+
+} */

@@ -1,0 +1,1374 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+	background-image: url('../images/homeo.jpg'); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;  
+}
+
+
+/* .container-fluid{
+	
+	font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-stretch: expanded;
+} */
+
+
+.mySlides {display: none;}
+img {vertical-align: middle; max-height: 300px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 576px) {
+  .slideshow-container {max-width: auto; margin: 20px 0px;}
+  .text {font-size: 11px}
+  img {vertical-align: middle; max-height: 250px;}
+  .dot {height: 8px; width: 8px; margin: 0 2px;}
+}
+
+@media only screen and (min-width: 576px) {
+  .slideshow-container {max-width: auto; margin: 20px 20px;}
+  .text {font-size: 11px}
+  img {vertical-align: middle; max-height: 220px;}
+  .dot {height: 8px; width: 8px; margin: 0 2px;}
+}
+
+@media only screen and (min-width: 768px) {
+  .slideshow-container {max-width: auto; margin: 20px 20px;}
+  .text {font-size: 11px}
+  img {vertical-align: middle; max-height: 250px;}
+  .dot {height: 8px; width: 8px; margin: 0 2px;}
+}
+
+@media only screen and (min-width: 992px) {
+  .slideshow-container {max-width: auto; margin: 20px 30px;}
+  .text {font-size: 11px}
+  img {vertical-align: middle; max-height: 280px;}
+  .dot {height: 8px; width: 8px; margin: 0 2px;}
+}
+
+ @media only screen and (min-width: 1200px) {
+  .slideshow-container {max-width: auto; margin: 20px auto;}
+  .text {font-size: 11px}
+  img {vertical-align: middle; max-height: 300px;}
+  .dot {height: 8px; width: 8px; margin: 0 2px;}
+}
+ 
+
+ /*yaha se pehle wala hai
+
+
+
+/* div header{
+	background-color: rgba(0, 0, 0, 0.5);
+
+	
+
+} */
+div #head1{
+	color: white;
+    text-align: center;
+    align-items: center	;
+    /* justify-content: center; */
+	text-decoration: underline;
+	font-stretch: ultra-expanded;
+	font-weight: 900;
+	padding-bottom: 5px;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	display: flex;
+	font-size: 2.5rem;
+	margin-left: 1rem;
+	display: inline-block;
+
+
+}
+
+div #head2{
+    color: white;
+    text-align: center;
+	text-decoration: underline;
+	font-stretch: expanded;
+	margin-top: 20px;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    display: none;
+
+ }
+
+.navbar{
+	min-height: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 26px;
+	
+
+}
+
+.navbar-menu{
+	/* display: flex; */
+	/* justify-content: space-between; */
+	align-items: center;
+	gap: 0px;
+
+}
+
+.nav-link{
+	transition: 0.7s ease;
+}
+
+.nav-link:hover{
+	color: dodgerblue;
+}
+
+
+.hamburger{
+	display: none;
+	cursor: pointer;
+
+}
+
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white; 
+}
+
+
+  .card {
+  box-shadow: 0 10px 12px 0 rgba( 0, 0, 0, 0.6); 
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+.title {
+  color: white;
+  font-size: 18px;
+  text-shadow: 2px 1px 0px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+#login_btn{
+	background-color: blue;
+	opacity: 0.6;
+	padding: 10px 16px;
+  	cursor: pointer;
+  	display: inline-block;
+  	border :  none;
+  	text-align: center;
+  	
+  	color: white;
+}
+#login_btn:hover{
+	background-color: #2196F3;
+	color: white;
+	text-shadow: 2px 1px 0px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#login_btn > h4{
+	font-size: 15px;
+	display: inline-block;
+	color: white;
+	text-shadow: 2px 1px 0px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#login_symbol{
+	margin-left: 10px;
+	font-size: 15px;
+}
+/* button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgba(0,0,0,1); 
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+} */
+
+ul li{
+	list-style-type: none;
+
+
+}
+ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+/*   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 8px darkblue; */ 
+}
+
+/* button:hover,  a:hover  {
+  background-color: grey;
+} */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.about{
+	display: flex;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	align-content: center;
+	justify-content: center;
+	margin: 25px auto;
+	text-decoration: underline;
+}
+
+
+
+
+div .column1 {
+   flex: 50%;
+   /* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6); */ 
+   max-width: 250px; 
+   /* height: 390px; */
+   padding-right: 	20px;
+   text-align: center;
+   color: white;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+   margin-right: 160px;
+
+    
+}
+div .column1 img{
+	margin-right: 0px;
+	
+}
+
+div .column2 {
+   flex: 40%;
+   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6);
+   text-align: center;
+   color: white;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+   padding: 10px;
+   margin-left: 170px;
+   margin-right: 0px;
+   margin-top: 2%;
+   height: 300px;	
+}
+div .column2 p{
+	align-content: center;
+	font-size: 22px;
+	margin-top: 50px;
+}
+.speciality{
+	display: flex;
+	width: 100%;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	margin: 25px auto;
+	text-decoration: underline;
+}
+.diseases{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 20px;
+
+	/* width: 100%;
+	height: auto; */
+}
+div#asthma, div#rhinitis, div#dermatitis, div#arthritis{
+	flex: 21%;
+}
+div#asthma{
+	text-align: center;
+	/* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6); */
+	/* min-height: 40px; */
+	height: auto;
+	background-color: white;
+/* 	margin-top: 10px; 
+	margin-right: 1.75%;
+	margin-bottom: 30px;
+	margin-left: 2%;
+	width: 21%; */
+}
+div#rhinitis{
+	
+	text-align: center;
+	/* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6); */
+	/* min-height: 40px; */
+	height: auto;
+	background-color: white;
+	margin-left: 10px; 
+/*  margin-top: 10px;
+	
+	margin-bottom: 30px;
+	
+	width: 21%; */
+	
+}
+div#dermatitis{
+	
+	text-align: center;
+	/* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6); */
+	/* min-height: 40px; */
+	height: auto;
+	background-color: white;
+	margin-right: 10px;
+	margin-left: 10px;
+/* 	margin-top: 10px; 
+	
+	margin-bottom: 30px;
+	
+	width: 21%; */
+	
+}
+div#arthritis{
+	
+	text-align: center;
+	/* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6); */
+	/* min-height: 40px; */
+	height: auto;
+	background-color: white;
+	/* margin-top: 10px; 
+	margin-right: 2%;
+	margin-bottom: 30px;
+	margin-left: 1.75%;
+	width: 21%; */
+	
+	
+}
+div#asthma h3, div#rhinitis h3, div#dermatitis h3, div#arthritis h3{
+	/* display: inline; */
+	text-align: center;
+	color: black;
+	padding: 10px;
+	text-decoration: underline;
+	text-transform: capitalize;
+}
+
+div#asthma p, div#rhinitis p, div#dermatitis p, div#arthritis p{
+	/* display: inline-block; */
+	/* width: 18%; */
+	max-height: /* 300px auto*/;
+	color: whtie;
+	font-weight: 900;
+	padding: 10px;
+	text-align: justify;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+#more1, #more2, #more3, #more4{
+	display: none;
+}
+ 
+.myBtn{
+	color: red;
+	padding-left: 55%;
+	cursor: pointer;
+}
+.cured{
+	display: flex;
+	width: 100%;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	margin: 25px auto;
+	text-decoration: underline;
+}
+
+/* .reviews	{
+	display: block;
+	width: 100%;
+	height: 400px;
+	background-color: rgba(	255, 255, 255); 
+	opacity: .5;
+	border: 1px solid grey;
+} */
+/* 	.reviews {
+	            height: 150px;
+	            overflow: hidden;
+	            position: relative;
+	            background: /* #fefefe */rgba(	255, 255, 255);
+	            /* opacity: .5; */
+	           /*  color: #333; */
+	            border: 1px solid #4a4a4a;
+	            padding-top: 50px;
+	        }
+        
+        /* .reviews #p1 {
+			display:inline-block;
+            position: absolute;
+            font-size: 28px;
+            color: darkviolet;
+            width: 100%;
+            height: 100%;
+            margin-right: 50px;
+            line-height: 50px;
+            text-align: left;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 25s linear infinite;
+        }
+		.reviews #p2 {
+			display:inline-block;
+            position: absolute;
+            font-size: 28px;
+            color: darkviolet;
+            width: 100%;
+            height: 100%;
+            line-height: 50px;
+            text-align: right;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 25s linear infinite;
+        }
+        .reviews #p3 {
+			display:inline-block;
+            position: absolute;
+            font-size: 28px;
+            color: darkviolet;
+            width: 100%;
+            height: 100%;
+            line-height: 50px;
+            text-align: right;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 25s linear infinite;
+        }
+        
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        } */
+#hwrap{ 
+	width: 100%;
+  height: 150px; 
+/*  background: #fffdea;*/
+background: white;
+  border: 2px solid #ffcf1f;
+  	
+  }
+#hmove{
+	display: flex;
+	position: relative;
+	top: 50%; 
+	right: 0;
+
+}
+#slide{
+	width: 100%;
+	flex-shrink: 0;
+	/* box-sizing: border-box; */
+  	padding: 10px;
+  	height: 6rem;
+}
+@keyframes slideh{
+	0% { right: 0; }
+  30% { right: 0; }
+  33% { right: 100%; }
+  63% { right: 100%; }
+  66% { right: 200%; }
+  97% { right: 200%; }
+  100% { right: 0; }
+}
+#hmove{ animation: slideh linear 25s infinite; }
+#hmove: hover{ animation-play-state: paused; }
+
+/*ai generated testimonial section*/
+
+.testimonial-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-color: #f9f9f9;
+    }
+    .testimonial {
+        position: absolute;
+        top: 50%;
+        right: -100%; /* Start off-screen */
+        transform: translateY(-50%);
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: right 0.5s ease-in-out;
+    }
+
+
+/*  Testimonial section ends here  */
+.map{
+
+	margin-top: 20px;
+	/* display: flex; */
+	width: 100%;
+	border: 1px solid grey;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .container-fluid{
+		background-color: black;
+    color: grey;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    /* margin: auto; */
+    font-stretch: expanded;
+    display: flex;
+   /*  justify-content: start; */
+    align-items: center;
+}
+
+
+#logo{
+	/* max-width: 150px;
+	max-height: 150px; */
+	border: 1px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+	/* margin-left: 25%; */
+	padding: 50px;
+}
+#f1{/* 
+		text-align: center;
+		align-items: center; */
+	/* justify-content: center; */
+	display: block;
+}
+#f2{
+	text-decoration: underline;
+/*	align-items: left;*/
+	/* font-size: 16px; */
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: 150px;
+}
+address{
+	text-align: left;
+	/*flex: 50%;*/
+}
+
+address div p{
+	color: white;
+	display: inline-block;
+	margin-right: 4em;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#symbol{
+	color:white; 
+	font-size:20px; 
+	margin-right:5em;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#consult{
+	color:grey;  
+	margin-right:150px; 
+	text-decoration: underline;
+}
+.time{
+	/* color: white; */
+	margin-left: 100px;
+	font-size: 20px;
+	text-decoration: underline;
+}
+.timing{
+	margin-left: 150px;
+	margin-top: 8px;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	color: white;
+}
+
+/* unvisited link*/ 
+footer a:link {
+  color: white;
+}
+
+/* visited link */
+footer a:visited {
+  color: darkviolet;
+}
+
+/* mouse over link */
+footer a:hover {
+  color: dodgerblue;
+}
+
+/* selected link */
+footer a:active {
+  color: blue;
+}
+
+
+
+
+										/* media queries start here */
+@media screen and (max-width: 380px){
+  .bar{background-color: black;}
+  #f2{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right:0px;
+}
+  address{
+  	margin-left: 25px;
+}
+address div p{
+/*	display: inline-block;*/
+	margin-left: 42px;
+	margin-right:0px;
+	
+}
+#consult{
+	margin-right: 0px;
+	
+}
+.time{
+	/* color: white; */
+	margin-left: 0px;
+	margin-right: 0;
+
+	text-decoration: underline;
+}
+.timing{
+	margin-left: 150px;
+	margin-top: 8px;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	color: white;
+}
+#logo{
+	text-align: center;
+}
+}
+
+
+@media screen and (max-width: 576px){
+	
+	div.hamburger{
+		margin-right: 5px;
+	}
+	.hamburger{
+		display: block;
+		color:yellow;
+	}
+	.hamburger .active .bar:nth-child(2){
+		opacity: 0;
+	} 
+	.hamburger .active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger .active .bar:nth-child(3){
+		transform: translateX(-8px) rotate(-45deg);
+	}
+	.navbar-menu{
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+		background-color:black;
+		z-index: 1;
+	}
+	.nav-item{
+		margin: 16px 0;
+	}
+	.navbar-menu.active{
+		left: 0;
+	}
+	div #head2{
+		display: block;
+		align-items: center;
+		justify-content: center;
+		font-size: 36px;
+		margin-top: 0;
+ 	}
+	div #head1{
+		display: none;
+	}
+	div .column1 img{
+	    max-height: 250px;	
+	    padding-right: 0;
+	}
+	div#asthma p, div#rhinitis p, div#dermatitis p, div#arthritis p{
+		height: auto;
+		max-height: 200px;
+   		overflow-y: scroll;
+	}
+	.row{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	div .column1{
+		order: 0;
+		margin-right: 0;
+		margin-bottom: 12px;
+		padding-right: 0;
+	}
+	div .column2 {
+  		margin: 0px 10px;
+  		padding: 5px;
+  		padding-top: 2%;
+   		order: 1;
+   		height: auto;
+   	}
+	div.column2 p {
+    	font-size: 22px;
+    	margin-top: 0px;
+  	}
+  	.reviews{
+  		height: 250px;
+  		border: 0px;
+  	}
+  	div.diseases{
+   		flex-direction: column;
+   	}
+   	div#asthma, div#rhinitis, div#dermatitis, div#arthritis{
+   		margin-top: 12px;
+   		
+   	}
+   	div#rhinitis, div#dermatitis{
+   		margin-left: 0;
+   		margin-right: 0;
+   	}
+   	div.map{
+   		/* max-height: 150px; */
+   	}
+   	div.reviews{
+   		max-height: 70px;
+   		padding-top: 10px;
+   	}
+   	.reviews #p2{
+   		margin-left: 350px;
+   	}
+   	.reviews #p3{
+   		display: none;
+   	}
+   	footer .container-fluid{
+   		padding-bottom: 10px;
+   		flex-direction: column;
+   		order: 1;
+   	}
+   	footer .container-fluid h4{
+		text-align: center;
+		font-size: 12px;
+		margin	
+	}
+	#zoom{
+		order: 1;
+	}
+	address div p{		
+		font-size: 15px	;
+	}
+	#symbol{
+		font-size: 15px;
+		margin-left: 15px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+
+	}
+	#consult{
+		text-align: center;
+		margin-left: 0px;
+	}
+	.time{
+		margin-left: 15px;
+		font-size: 18px;
+	}
+
+	.timing{
+		margin-left: 50px;
+		font-size: 15px;
+	}
+	#zoom{
+
+	}
+	#logo{
+		width: 50%;
+		margin-bottom: 0;
+		margin-top: 25px;
+		padding: 10px;
+		/* align-items: center; */
+
+	}
+	body {
+    	background-image:  url('../images/homoeo2.jpg');
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-size: 100% 100%;
+    	width: 100%;
+    	height: auto;
+    	background-color: black;
+	} 
+}
+
+ @media screen and (min-width: 577px){
+	
+	.hamburger{
+		display: block;
+	}
+	.hamburger .active .bar:nth-child(2){
+		opacity: 0;
+	} 
+	.hamburger .active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger .active .bar:nth-child(3){
+		transform: translateX(-8px) rotate(-45deg);
+	}
+	.navbar-menu{
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+		background-color:black;
+		z-index: 1;
+	}
+	.nav-item{
+		margin: 16px 0;
+	}
+	.navbar-menu.active{
+		left: 0;
+	}
+	div #head2{
+		display: none;
+ 	}
+	div #head1{
+		display: block;
+		font-size: 36px;
+		margin: 0px;
+	}
+	div .column1 img{
+	    max-height: 265px;	
+	}
+	#login_btn{
+		padding: 10px 16px;
+  		font-size: 12px;
+  	}
+	.row{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	div .column1{
+		order: 0;
+		margin-bottom: 10px;
+		margin-right: 0;
+		
+	}
+	div .column2 {
+  		margin: 0px 10px;
+  		padding: 5px;
+  		
+   		order: 1;
+   		height: auto;
+
+    }
+ 	div.column2 p {
+    	font-size: 22px;
+    	margin-top: 0;
+  	}
+  	div.diseases{
+  		flex: 50%;
+  		justify-content: center;
+  	}
+	div#asthma{
+		margin-right:;
+		margin-left: ;
+		flex: 50%;
+		max-width: 260px;
+	
+	}
+	div#rhinitis{
+		flex: 50%;
+		margin-right:;
+		margin-left: ;
+		max-width: 260px;
+	
+	}
+	div#dermatitis{
+		flex: 50%;
+    	max-width: 356px;
+    	margin-left: 0;
+    	margin-top: 20px;
+		max-width: 260px;
+	}
+	div#arthritis{
+		margin-top: 20px;
+		max-width: 260px;
+	}
+	footer .container-fluid{
+   		padding-bottom: 10px;
+   		flex-direction: column;
+   		order: 1;
+   	}
+   	footer .container-fluid h4{
+		text-align: center;
+		font-size: 11px;
+		margin	
+	}
+	#zoom{
+		order: 1;
+		text-align: center;
+	}
+	address div p{		
+		font-size: 15px	;
+	}
+	#symbol{
+		font-size: 15px;
+		margin-left: 0px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		/* text-align: center; */
+
+	}
+	#consult{
+		text-align: center;
+		margin-left: 0px;
+	}
+	.time{
+		margin-left: 15px;
+		font-size: 18px;
+	}
+
+	.timing{
+		margin-left: 50px;
+		font-size: 15px;
+	}
+	#logo{
+		width: 50%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding: 0;
+		align-items: start;
+	}
+
+	footer .container-fluid h4{
+		text-align: center;
+		font-size: 14px;	
+	}
+
+
+} 
+
+ @media only screen and (min-width: 768px){
+	.hamburger{
+		display: block;
+	}
+	 .navbar-menu{
+		display: flex;
+	} 
+	#head2{
+		display:none;
+ 	}
+	#head1{
+		 display: block; 
+		font-size: 38px;
+		margin-left: 40px;
+	}
+	.row{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 15px;
+
+	}
+	div .column1 img{
+	    max-height: 250px;	
+	}
+	
+	div .column1{
+		
+		margin-right: 15px;
+		padding-right: 0;
+	}
+	div .column2 {
+  		margin-bottom: 240px;
+  		margin-left: 10px;
+  		margin-right: 10px;
+  		padding: 0px;
+  		max-height: 0px;
+  		
+   	}
+ 	div.column2 p {
+    	font-size: 22px;
+    	margin-top: 0;
+  	}
+   	div.diseases{
+  		flex: 50%;
+  		justify-content: center;
+
+  		
+  	} 
+  	/* div#asthma, div#rhinitis, div#dermatitis, div#arthritis {
+  		flex: 50%;
+  	} */
+  	
+  	/* div#asthma p, div#rhinitis  p, div#dermatitis p, div#arthritis p{
+		height: auto;
+	} */
+	div#asthma{
+		margin-right:;
+		margin-left: ;
+		flex: 50%;
+		max-width: 356px;
+	
+	}
+	div#rhinitis{
+		flex: 50%;
+		margin-right:;
+		margin-left: ;
+		max-width: 356px;
+	
+	}
+	div#dermatitis{
+		flex: 50%;
+    	max-width: 356px;
+    	margin-left: 0;
+    	margin-top: 20px;
+		max-width: 356px;
+	}
+	div#arthritis{
+		margin-top: 20px;
+		max-width: 356px;
+	}
+	footer .container-fluid{
+		flex-direction: row;
+	}
+	#zoom{
+		order: 0;
+	}
+	footer .container-fluid h4{
+		text-align: center;
+		font-size: 14px;	
+	}
+	div.reviews{
+		max-height: 50px;
+
+	}
+}
+ @media only screen and (min-width: 992px){
+	.hamburger{
+		display: none;
+	}
+	 .navbar-menu{ 
+		display: contents; 
+		flex-direction: row;
+		flex-wrap: wrap;
+    	align-items: center;
+    	justify-content: space-between;
+    	gap: 60px;
+    	background-color: none; */
+    	/* width: auto;
+    	margin-left: 20px;*/
+
+} 
+	.nav-item{
+		margin: 16px 0;
+	} 
+
+	div #head2{
+		display: none;
+ 	}
+	div #head1{
+		 display: block; 
+		font-size: 40px;
+		margin-left: 40px;
+	}
+	div .column1 img{
+	    max-height: 300px;	
+	}
+	.row{
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	div .column1{
+		/* order: 0; */
+		margin-right: 150px;
+		padding-right: 0;
+	}
+	div .column2 {
+   		margin-left: 150px;
+  		margin-right: 15px;
+  		padding-bottom: 120px;
+  		/* order: 1; */
+  		box-shadow: none;
+   	}
+ 	div.column2 p {
+    	font-size: 22px;
+    	margin-top: 25px;
+  	}
+	.diseases{  	
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 20px;
+	}
+	div#asthma, div#rhinitis, div#dermatitis, div#arthritis{
+	flex: 21%;
+	}	
+	div#asthma{
+		text-align: center;
+		height: auto;
+		background-color: white;
+	}
+	div#rhinitis{
+		text-align: center;
+		height: auto;
+		background-color: white;
+		margin-left: 10px;
+
+	}
+	div#dermatitis{
+		text-align: center;
+		/* height: auto; */
+		background-color: white;
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-top: 0;
+	}
+	div#arthritis{
+		text-align: center;
+		height: auto;
+		background-color: white;
+		margin-top: 0;
+	}
+	div.reviews{
+		max-height: 100px;
+		padding-top: 25px;
+		
+	}
+	.reviews #p1{
+		font-size: 20px;
+	}
+	.reviews #p2{
+		font-size: 20px;
+		margin-left: 400px;
+	}
+	.reviews #p3{
+		font-size: 20px;
+		margin-left: 500px;
+	}
+	footer .container-fluid h4{
+		text-align: center;
+		font-size: 15px;
+
+	}
+	footer .container-fluid{
+   		padding-bottom: 10px;
+   	}
+	#symbol{
+		font-size: 15px;
+		margin-left: 50px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+
+		/* text-align: center; */
+
+	}
+	address div p{		
+		font-size: 16px;
+		margin-left: 80px;
+		margin-top: 10px;
+	}
+	#consult{
+		text-align: center;
+		margin-left: 0px;
+	}
+	.time{
+		margin-left: 50px;
+		font-size: 18px;
+	}
+
+	.timing{
+		margin-left: 80px;
+		font-size: 15px;
+	}
+	#logo{
+		width: 50%;
+		/* margin-top: 15px; */
+		margin-bottom: 15px;
+		padding: 0;
+		
+	}
+
+} 
+
+/* @media only screen and(min-width: 1200px){
+ */		
+/* .navbar{
+	min-height: 170px;
+	display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0px 26px;
+	
+
+		}
+
+		.navbar-menu{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 60px;
+
+		}
+
+		.nav-link{
+			transition: 0.7s ease;
+		}
+
+		.nav-link:hover{
+			color: dodgerblue;
+		}
+		.row{
+	 		display: flex;
+	 		justify-content: center;
+	 		align-items: center;
+	 		margin-bottom: 15px;
+	 	}
+		div .column1 {
+	 		margin-bottom: 0px;
+	 		margin-right: 30px;
+	 		padding-right: 0;
+	 		max-width: 240px;
+	 	}
+	 	div .column1 img{
+		    max-height: 300px;	
+		}
+	 	div .column2 {
+	  		margin-left: 30px;
+/* 	  		margin-bottom: 150px;
+	  		padding: 5px;
+	  		padding-top: ;
+	  		/* height: auto;
+	  		box-shadow: none;
+	 		
+	    }
+	 	div.column2 p {
+	    	font-size: 21px;
+	    	
+	    }
+	    div #head1{
+			display: block;
+		}
+		div #head2{
+			display: none;
+		}
+	} 
+ */ 

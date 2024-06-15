@@ -1,0 +1,262 @@
+<?php  
+include "login.php";
+?> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Homeopathic treatment">
+  <meta name="keywords" content="Dr. Ubaid Khan, Homeopathy, Fatema clinic, yavatmal">
+  <meta name="author" content="mywebdesigner">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+	<script src="https://kit.fontawesome.com/8096922318.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Dr.Ubaid Khan Homeopathy clinic</title>
+</head>
+
+
+<body>
+<!--header section starts here-->	
+
+	<div class="container-fluid">
+  <header class="top" id="top">  
+
+			<nav class="navbar">
+			<h1 id="head1">Fatema Homeopathic Clinic</h1>
+				<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar"> -->
+			<ul class="navbar-menu">
+        <!--<li><a href="#">Home</a></li>-->
+        <li class="nav-item"><a href="#about" class="nav-link">About Doctor</a></li>
+        <li class="nav-item"><a href="#diseases" class="nav-link">Diseases</a></li>
+        <li class="nav-item"><a href="#map" class="nav-link">Map</a></li>
+      </ul>
+      <div class="hamburger">
+      	<span class="bar"></span>
+      	<span class="bar"></span>
+      	<span class="bar"></span>
+      </div>
+    </nav>
+</header> 
+<h1 id="head2">Fatema Homeopathic Clinic</h1>
+		  
+	</div>
+
+<!--CARAOUSAL SECTION-->	
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">1 / 3</div> -->
+  <img src="images/Samuel-Hahnemann-Quote.jpg" alt="banner-Image 1" style="width:100%">
+  <!-- <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">2 / 3</div> -->
+  <img src="images/about_homeopathy.jpg" alt="banner-Image 2" style="width:100%">
+  <!-- <div class="text">Caption Two</div> -->
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">3 / 3</div> -->
+  <img src="images/banners-01.jpg" alt="banner-Image 3" style="width:100%">
+  <!-- <div class="text">Caption Three</div> -->
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+	
+
+<!-- ABOUT DOCTOR SECTION-->
+
+<div class="about"><h1>About Doctor</h1></div>	
+<br><br>
+<!-- Add icon library -->
+<div class="row">
+<!--<div class="card">-->
+
+	<div class="column2">
+
+ 	<p> <strong>He</strong> is in the field since last 30 years serving the patients.  His approach to Homeopathy is to treat the internal disorder in a natural and least harmful way thereby boosting the immune system with the correct homeopathic medicine. He believes that Homeopathic remedies are so powerful that if carefully prescribed, can bring about beautiful cure with the overall general improvement. Moreover, there are no side effects.   </p>
+
+</div>
+
+<!--DOCTOR'S MAIN IMAGE-->
+<div class="column1">
+  <img src="dad pics/1.webp" alt="Dr.Ubaid" id="dr" style="width:100%;">
+  <h2>Dr. Ubaid Khan</h2>
+  <p class="title">(D.H.M.S)</p>
+  <button class="btn default" id="login_btn" name="login"><h4>Doctor's Login</h4><i id="login_symbol" class="fa-solid fa-right-to-bracket"></i></button>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+ 
+  <div class="modal-content">
+     <!-- <span class="close">&times;</span>  -->
+    <!-- <table border="0px" style="overflow-x: auto;"> -->
+    	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="was-validated">
+    		<div id="heading"><h2>Enter Details<h2></div>
+    		<br><br>
+			<i class="fa-solid fa-user"></i><input type="text" id="uname" placeholder="Username Please..." name="uname" required>
+        	<br><br>
+       	
+       		<i class="fa-solid fa-lock"></i><input type="password" id="pwd" placeholder="Password Please..." name="pwd" required>
+       		<br><br>
+
+        	<input type="checkbox" class="chk" onclick="showpwd()"><span class="shpwd">Show Password</span>
+        	<br><br>
+
+        	<!-- <button type="button" name="" value="Cancel" id="btn1">Cancel</button> --><button type="submit" name="submit"  id="btn2">Login</button>
+    	</form>
+    <!-- </table> -->
+  </div>
+
+</div>
+
+  <!--<a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>-->
+  <!-- <p><a href=""><button >Contact</button></a></p> -->
+  </div>
+
+<!-- <div class="container">-->
+		
+ 	
+ </div>
+</div>
+
+
+<br> <br>
+<!--
+</div>-->
+
+
+<!--DOCTOR'S SPECIALLITY SECTION-->
+<div class="speciality"  id="diseases"><h1>speciality in</h1></div>
+
+   <div class="diseases">	
+	<div id="asthma"><h3>asthma</h3><p>A condition in which a person's airways become inflamed, narrow and swell and produce extra mucus, which makes it difficult to breathe.
+Asthma can be minor or it can interfere with daily activities. In some cases, it may lead to a <span id="dots1">...</span><span id="more1">A condition in which a person's airways become inflamed, narrow and swell and produce extra mucus, which makes it difficult to breathe.
+Asthma can be minor or it can interfere with daily activities. In some cases, it may lead to a life-threatening attack.
+Asthma may cause difficulty breathing, chest pain, cough and wheezing. The symptoms may sometimes flare up.A condition in which a person's airways become inflamed, narrow and swell and produce extra mucus, which makes it difficult to breathe.
+Asthma can be minor or it can interfere with daily activities. In some cases, it may lead to a life-threatening attack.
+Asthma may cause difficulty breathing, chest pain, cough and wheezing. The symptoms may sometimes flare up.A condition in which a person's airways become inflamed, narrow and swell and produce extra mucus, which makes it difficult to breathe.
+Asthma can be minor or it can interfere with daily activities. In some cases, it may lead to a life-threatening attack.
+Asthma may cause difficulty breathing, chest pain, cough and wheezing. The symptoms may sometimes flare up.A condition in which a person's airways become inflamed, narrow and swell and produce extra mucus, which makes it difficult to breathe.
+Asthma can be minor or it can interfere with daily activities. In some cases, it may lead to a life-threatening attack.
+Asthma may cause difficulty breathing, chest pain, cough and wheezing. The symptoms may sometimes flare up.</span></p>
+<br><a onclick="myFunction1()" class="myBtn" id="myBtn1" href="">Read more</a></div>
+	
+	<div id="rhinitis"><h3>allergic rhinitis</h3><p>An allergic response causing itchy, watery eyes, sneezing and other similar symptoms.
+Allergic rhinitis occurs seasonally or year-round. Diagnosis involves history-taking, examination of the nasal passages and sometimes skin testing.
+<span id="dots2">...</span><span id="more2">Symptoms include sneezing, runny nose and red, watery and itchy eyes.</span></p><br><a onclick="myFunction2()" class="myBtn" id="myBtn2" href="">Read more</a></div>
+	
+	<div id="dermatitis"><h3>dermatitis </h3><p>Dermatitis is a general term that describes a common skin irritation. It has many causes and forms and usually involves itchy, dry skin or a rash. Or it might cause the skin to blister, ooze, crust or flake off.<br>What does a dermatitis <span id="dots3">...</span><span id="more3">rash look like?
+An itchy rash. Leathery patches that are darker than usual (hyperpigmented), typically on brown or Black skin. Dry, cracked, scaly skin, typically on white skin. Bumps and blisters, sometimes with oozing and crusting.rash look like?
+An itchy rash. Leathery patches that are darker than usual (hyperpigmented), typically on brown or Black skin. Dry, cracked, scaly skin, typically on white skin. Bumps and blisters, sometimes with oozing and crusting.</span></p><br>
+<a onclick="myFunction3()" class="myBtn" id="myBtn3" href="">Read more</a></div>
+	
+	<div id="arthritis"><h3>arthritis</h3><p>Inflammation of one or more joints, causing pain and stiffness that can worsen with age.
+Different types of arthritis exist, each with different causes including wear and tear, infections and underlying diseases.
+Symptoms<span id="dots4">...</span><span id="more4">include pain, swelling, reduced range of motion and stiffness.
+Medication, physiotherapy or sometimes surgery helps reduce symptoms and improve quality of life.</span></p><br>
+<a onclick="myFunction4()" class="myBtn" id="myBtn4" href="">Read more</a></div>
+</div>
+
+
+<!-- TESTIMONIALS SECTION -->
+
+<div class="cured"><h1>patients review</h1></div>
+
+<!-- <div class="reviews">
+
+	<div id="p1">
+		<p>"Doctor's nature is very nice. Thank You Doctor." <sub>Yasir Khan</sub> </p>
+	</div>
+	<div >
+	<p id="p2">"Well experienced doctor. Feeling much better."<sub>Tariq Khan</sub></p>
+	<p id="p3">"Well treated. Feeling satisfied."<sub>Talha Khan</sub></p>
+	</div>
+	
+</div> -->
+
+<!-- div id="hwrap"><div id="hmove">
+	<div id="hslide">
+		<p>"Doctor's nature is very nice. Thank You Doctor." <sub>Yasir Khan</sub></p>
+	</div>
+	<div id="hslide"><p>"Doctor's nature is very nice. Thank You Doctor." <sub>Yasir Khan</sub></p></div>
+	<div id="hslide"><p>"Doctor's nature is very nice. Thank You Doctor." <sub>Yasir Khan</sub></p></div>
+</div></div> -->
+  <div class="testimonial-container">
+    <div class="testimonial">
+        <p>"Amazing product! It completely exceeded my expectations."</p>
+        <p>- John Doe</p>
+    </div>
+</div>
+
+   
+
+
+<!-- MAP SECTION -->
+
+<div class="map" id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.818342217833!2d78.13903799429467!3d20.390378520812966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd3e971a6fbcc69%3A0xfe8228528e507aa1!2sDr.%20Ubaid%20Khan%2C%20Homoeopathic%20Clinic!5e0!3m2!1sen!2sin!4v1658239855383!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="clinic map"></iframe>
+</div> 
+
+<!-- scroll top button  -->
+<!-- 
+<a href="#top" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a> -->
+
+
+<!--footer starts here-->
+
+<footer>
+ <div class="container-fluid">
+ 	<div id="zoom"><a  href="#"><img id="logo" src="images/logo_unedited.jpg" alt="logo"></a><br><br>
+ <h4 id="f1">© 2023, Dr. Ubaid Khan. All Rights Reserved. <br>Designed by <a id="footer_link" href="..\web-company\index.php">www.mywebdesigner.com</a></h4></div>
+	<address>
+		<h1 id="f2">Contact Info</h1>
+		<div><i id="symbol" class="fa-solid fa-house-medical-circle-check"></i>Clinic Address<br><p>Kalam Chowk, Opp. Rahat Urban Bank, Yavatmal. 445001.(Maharashtra, India.)</p><br><br>
+			<i id="symbol" class="fa-brands fa-whatsapp"></i>Click to chat with Doctor<br><a href="https://wa.me/918637706477"><p>+91-8637706477</p></a><br><br>
+			<i id="symbol" class="fa-solid fa-mobile-screen-button"></i>Click to start a call<br><a href="tel: +91-8637706477"><p>+91-8637706477</p></a><br><br>
+			<h2 id="consult">Consulting Schedule</h2><br>
+			<ul class="time">Monday - Saturday</ul>
+			<li class="timing"> 11:00 am - 3:00 pm</li>
+			<li class="timing"> 6:30 pm - 10:00 pm</li>
+			<ul class="time">Sunday</ul>
+			<li class="timing">11:00 am - 3:00 pm</li>
+			<li class="timing">Closed</li>
+	</address></div>
+
+ </div>
+</footer>
+
+
+
+
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

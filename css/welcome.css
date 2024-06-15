@@ -1,0 +1,382 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.heading{
+	background: black;
+	height: auto;
+	
+	justify-content: center;
+	
+}
+h1{
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	letter-spacing: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+h2{
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	width: 15%;
+  	/* text-align: center; */
+  	background-color: #f1f1f1;
+  	height: 100%; /* Full height */
+  	position: fixed; /* Make it stick, even on scroll */
+  	overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+li a {
+  	display: block;
+ 	color: #000;
+ 	padding: 12px 16px;
+ 	text-decoration: none;
+ 	/* margin-left: 5px; */
+
+}
+li a:hover{
+	background-color: #555;
+	color: white;
+}
+
+
+i{
+	margin: 5px;
+	font-size: 20px;
+}
+
+#search-icon{
+    position: absolute;
+    margin: 8px 5px;
+    color: grey;
+
+}
+/* The Modal (background) */
+.modal {
+  	display: none; /* Hidden by default */
+  	position: fixed; /* Stay in place */
+  	z-index: 1; /* Sit on top */
+  	padding-top: 100px; /* Location of the box */
+  	left: 0;
+  	top: 0;
+  	width: 100%; /* Full width */
+  	height: 100%; /* Full height */
+  	overflow: auto; /* Enable scroll if needed */
+  	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  	overflow-x: hidden;
+
+}
+
+/* Modal Content */
+.modal-content {
+  	background-color: lightcyan;
+  	margin: auto;
+  	padding: 50px;
+  	border: 1px solid #888;
+  	width: 50%;
+  	height: auto;
+/*   display: flex; */
+  /* justify-content: center; */
+
+}
+#div_form{
+	display: inline-block;
+	margin: 6px 10px;
+	font-weight: 900;
+	font-size: 18px;
+	width: 100%;
+}
+form{
+	text-align: left;
+}
+
+input[type=number], select, textarea{
+	width: 100%;
+  	padding: 12px;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	resize: vertical;
+}
+input[type=tel], select, textarea{
+  width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=text], select, textarea{
+	width: 100%;
+  	padding: 12px;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	resize: vertical;
+}
+input[type=date]{
+	margin-left: 10px;
+}
+#sub button{
+	display: inline-block;
+	width: 100%;	
+	height: 30px;
+	margin: 10px 10px;
+}
+#cancel button{
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	margin: 10px 10px;
+}
+
+/* #delete_icon{
+	z-index: ;
+	position: absolut;
+} */
+
+#sr_no{
+	display: inline-block;
+}
+#case_no{
+	display: inline-block;
+}
+#pname{
+	display: inline-block;
+}
+#age{
+
+}
+
+#male{
+	margin-left: 10px;
+	margin-right: 3px;
+}
+#female{
+	margin-left: 20px;
+	margin-right: 3px;
+}
+#child{
+	margin-left: 20px;
+	margin-right: 3px;
+}
+#npatient{
+	
+}
+#logout_link{
+	text-decoration: none;
+
+}
+#logout{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* margin-left: 50%; */
+	margin: 12px auto 0 auto;
+	width: 50%;
+	height: 25px;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+#logout:hover{
+	color: blue;
+	background: lightblue;
+}
+
+/* Main Body Table Formating Starts Here */
+
+#main{
+	/* overflow-x: auto; */
+	margin-left: 20%;
+}
+th{
+	background-color: black;
+	color: white;
+}
+td{
+	background-color: lightblue;
+	padding-left: 5px;
+	/* margin-right: 5px; */
+	width: auto;
+}
+#operate{
+	text-align: center;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+ 
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+ /* Formatting search box */
+ #search{
+ 	color: white;
+ }
+    .search-box{
+        /*width: 250px;*/
+        position: relative;
+        /* display: flex; */
+        font-size: 14px;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .search-box input[type="text"]{
+        height: 32px;
+        padding: 5px 0px 3px 25px;
+        border: 1px solid #CCCCCC;
+        font-size: 14px;
+
+    }
+    .result{
+        position: absolute;        
+        z-index:999;
+        top: 100%;
+        left: 0;
+        color: white;
+        font-size: 18px;
+        background-color: black;
+
+    }
+    .search-box input[type="text"], .result{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /* Formatting result items */
+    .result p{
+        margin: 0;
+        padding: 7px 10px;
+        border: 1px solid #CCCCCC;
+        border-top: none;
+        cursor: pointer;
+    }
+    . result p:hover{
+        background: /* #f2f2f2 */;
+    } 
+
+
+
+/* Delete Confirmation Modal */
+/* Set a style for all buttons */
+button{
+  background-color: #04AA6D;
+  color: white;
+  padding: 0px 0px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+/* The Modal (background) */
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* left: 0;
+  top: 0; */
+  margin: 5% 25% 5% 25%;
+  width: 50%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modall-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
